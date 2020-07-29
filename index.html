@@ -5,37 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProGrad</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>ProGrad</h1>
-    <p>Welcome <br> to ProGrad Family</p>
-    <hr>
-    <img src="/assets/humaaans.png" alt="Welcome Image">
-    <p>Welcome to ProGrad
-    </p>
+    <nav>
+        <ul>
+            <li class="logo-text">
+                ProGrad
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#bio" class="nav-link">BIO</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="link-button">CONTACT</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div>
+            <p>I BELIEVE IN </p>
+            <h1>Eat();Sleep();Code();Repeat()</h1>
+        </div>
+    </header>
 
-    <h1>Elon Musk</h1>
-    <h2>Steve Jobs</h2>
-    <h3>Roger Federer</h3>
-    <h4>Albert Einstine</h4>
-    <h5>Wrren Buffet</h5>
-    <h6>Magnus Carlsen</h6>
-    <hr>
-    <ol>
-        <li>Passion</li>
-        <li>Career</li>
-        <li>Self-satisfaction</li>
-        <li>Entertainment</li>
-    </ol>
+    <section id="bio">
+        <img src="assets/Screenshot_20190929-121446_WhatsApp.jpg" alt="avtar">
+        <article>
+            <h2>Nisha Yadav</h2>
+            <p>Im a passionate Engineer with a degree in Computer Science and Engineering. My very first experience with
+                code was at the time when I was in school. I got introduced 
+                HTML & JavaScript, the excitment of having the power to structure pages on my own sounded amazing and that's
+                when I decised to pursue Web development.
+            </p>
+            <span class="break"></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur, quisquam vero asperiores temporibus ratione et fugit necessitatibus repudiandae nesciunt modi enim cum labore voluptatum laudantium commodi deleniti, debitis doloribus.</p>
+            <span class="break"></span>
 
-    <ul>
-        <li>Eat</li>
-        <li>Sleep</li>
-        <li>Code</li>
-        <li>Repeat</li>
-    </ul>
 
-</body>
+            <p>I am currently on the look out for a challenging role to build products that make difference.
+            </p>
+
+            <a href="assets/Nisha CV.doc" class="link-button">Download My Resume</a>
+        </article>
+    </section>
+
+    <section id="portfolio">
+        <h3>PORTFOLIO</h3>
+        <p>Some of my best projects so far</p>
+        <hr>
+        <div>
+            <article>
+                <img src="http://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="icon">
+                <h4>PERSONAL BLOG</h4>
+                <p>A blog where i pen my own thoughts on programming</p>
+            </article>
+            <article>
+                <img src="http://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="icon">
+                <h4>TIC TAC TOE</h4>
+                <p>Complete Tic Tac Toe game along with GUI using Java</p>
+            </article>
+            <article>
+                <img src="http://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="icon">
+                <h4>TIME TABLE GENERATOR</h4>
+                <p>A web applicaction for automatic time table generation.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <div id="skills-container">
+            <div>
+                <h4>TECHNICAL SKILLS</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li><progress id="file" value="70" max="100"> </progress></li>
+
+                    <li>CSS</li>
+                    <li><progress id="file" value="60" max="100"> </progress></li>
+
+                    <li>JAVASCRIPT</li>
+                    <li><progress id="file" value="65" max="100"> </progress></li>
+
+                    <li>ANGULAR</li>
+                    <li><progress id="file" value="32" max="100"> </progress></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>LANGUAGES</h4>
+                <ul>
+                    <li>ENGLISH</li>
+                    <li><progress id="file" value="60" max="100"> 32% </progress></li>
+
+                    <li>HINDI</li>
+                    <li> <progress id="file" value="90" max="100"> 32% </progress></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <form action="#">
+        <h3>CONTACT</h3>
+
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            <br>
+            <input type="email" placeholder="Email">
+            <br>
+            <br>
+            <input type="text" placeholder="Message">
+            <br>
+            <br>
+            <a href="#" class="link-button">Send Message</a>
+
+        </form>
+    </footer>
+
 
 </html>
